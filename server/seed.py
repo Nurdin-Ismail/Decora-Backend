@@ -127,6 +127,7 @@ with app.app_context():
                 
                 
                 images = []
+                fileso.sort()
                 for img in fileso:
                       image = open(path + '/' + img, 'rb')
                       

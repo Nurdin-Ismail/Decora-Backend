@@ -27,7 +27,7 @@ class User(db.Model, SerializerMixin):
 class Product(db.Model, SerializerMixin):
     __tablename__ = 'products'
     
-    
+    serialize_rules = ( '-images.product', '-images.img')
     
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String)
@@ -37,6 +37,8 @@ class Product(db.Model, SerializerMixin):
     tag = db.Column(db.String)
     price = db.Column(db.Integer)
     quantity = db.Column(db.String)
+    
+    images = db.relationship('Image', backref='product')
     
     # images = re
     
