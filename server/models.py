@@ -38,11 +38,16 @@ class Product(db.Model, SerializerMixin):
     price = db.Column(db.Integer)
     quantity = db.Column(db.String)
     
+    # images = re
+    
 class Image(db.Model, SerializerMixin):
     __tablename__ = 'images'
     
     id = db.Column(db.Integer, primary_key=True)
     product_id = db.Column(db.Integer, db.ForeignKey('products.id'), nullable=False)
+    img = db.Column(db.Text, nullable = False)
+    name = db.Column(db.String, nullable=False)
+    mimetype = db.Column(db.Text, nullable=False)
     
 
 class Cart(db.Model, SerializerMixin):

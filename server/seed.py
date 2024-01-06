@@ -1,17 +1,65 @@
 from app import  app
 from models import *
 import json
+import os
+
+
 
 
 with app.app_context():
     
     Product.query.delete()
+    Image.query.delete()
     
     text_file = open('/home/nurdin/Projects/Decora_Backend/json', 'r')
 
     text_file1 = text_file.read()
+    # print(text_file1)
     data = json.loads(text_file1)
     filtered = []
+    
+    target_names = []
+    
+    for i in data:
+        target_names.append(i['PRODUCT NAME'])
+        
+    
+        
+ 
+    
+   
+    #directory for all the product images
+    my_dir = '/home/nurdin/Projects/exercise/Productimages'
+    #list for names of the directories that contain the images
+    names = []
+    for dir, sub, fileso in os.walk(my_dir):
+    
+        if dir != '/home/nurdin/Projects/exercise/Productimages':
+            if sub:
+                names.append(sub)
+                # print(sub)
+                # print(fileso)
+        
+
+    resultList = []
+
+# Traversing in till the length of the input list of lists
+# 
+    for m in range(len(names)):
+
+   # using nested for loop, traversing the inner lists
+        for n in range (len(names[m])):
+
+      # Add each element to the result list
+            resultList.append(names[m][n])
+            
+            
+    common_names = [name for name in resultList if name in target_names]
+    
+    # print("Common names:")
+    
+    # print(common_names)
+    
     for i in data:
         if i.get("RECEIVED QUANTITY") and i.get('DESCRIPTION'):
             filtered.append(i)
@@ -22,9 +70,32 @@ with app.app_context():
         name_counts[name] = name_counts.get(name, 0) + 1
 
 # Filter dictionaries with unique 'name' key
-    filtered_data = [item for item in filtered if name_counts[item['PRODUCT NAME']] == 1]
+    # filtered_data = [item for item in filtered if name_counts[item['PRODUCT NAME']] == 1 and name_counts[item['PRODUCT NAME']] in common_names]
+    filtered_data = []
+    
+    for item in range(len(filtered)):
+        if filtered[item]['PRODUCT NAME'] in common_names and name_counts[filtered[item]['PRODUCT NAME']] == 1:
+            filtered_data.append(filtered[item])
+    
+    
+    # item = filtered[230]['PRODUCT NAME']
+    # if item in common_names:
+    #     print('Item: ', item)
         
+    # for item in range(len(filtered)):
+    #     if filtered[item]['PRODUCT NAME'] in common_names:
+    #         print('Item: ', filtered[item]['PRODUCT NAME'])
             
+    filtered_common_names = []   
+    for item in filtered_data:
+        if item['PRODUCT NAME'] in common_names:
+            filtered_common_names.append(item["PRODUCT NAME"])
+    print('filtered names' ,len(filtered_common_names))
+    # print(filtered_data)
+    
+    print(len(filtered_data))
+        
+     #POPULATING PRODUCTS TABLE       
     products = []
     for product in filtered_data:
         new_product = Product(
@@ -42,9 +113,45 @@ with app.app_context():
     db.session.commit()
     
     print("Products successfully populated")
-    print(data[9]["RECEIVED QUANTITY"])
     
-    # print(data[0]['PRODUCT NAME'])
+    
+    # print(Product.query.all())
+    
+    #POPULATING IMAGES TABLE
+    for path, sub, fileso in os.walk(my_dir):
+        for item in filtered_common_names:
+            if item in path:
+                # print(item ,fileso)
+                
+                product = Product.query.filter(Product.name == item).first()
+                
+                
+                images = []
+                for img in fileso:
+                      image = open(path + '/' + img, 'rb')
+                      
+                      imeji = Image(
+                          product_id = product.id,
+                          img = image.read(),
+                          name = img,
+                          mimetype = 'image/jpg'
+                          
+                      )
+                      
+                      images.append(imeji)
+                db.session.add_all(images)
+                db.session.commit()
+                
+    print("Imagess successfully populated") 
+                      
+                      
+                      
+                      
+                      
+                
+        
+
+    # resultList = []
     
     
 
