@@ -1,15 +1,19 @@
 from app import  app
 from models import *
 import json
+from faker import Faker
+import random
 import os
 
 
 
 
 with app.app_context():
+    fake = Faker()
     
     Product.query.delete()
     Image.query.delete()
+    User.query.delete()
     
     text_file = open('/home/nurdin/Projects/Decora_Backend/json', 'r')
 
@@ -144,7 +148,50 @@ with app.app_context():
                 db.session.commit()
                 
     print("Imagess successfully populated") 
-                      
+    
+    #POPULATING USERS TABLE
+    list_of_usernames = []
+    for _ in range(100):
+        list_of_usernames.append(fake.name())
+        
+    users = []
+    for user in list_of_usernames:
+        new_user = User(
+            username = user,
+            # location = fake.address(),
+            email = fake.email(),
+            password = fake.password(),
+            contacts = fake.phone_number(),
+            
+            
+        )
+        users.append(new_user)
+    db.session.add_all(users)
+    db.session.commit()
+    print("Users successfully populated")
+    
+    
+    #POPULATING CARTS
+    
+    carts= []
+    for i in range(50):
+        user = random.randrange(1,101)
+        product = random.randrange(1,78)
+        cart = Cart(
+            user_id = user,
+            product_id = product
+        )
+        
+        carts.append(cart)
+    
+        
+    db.session.add_all(carts)
+    db.session.commit()
+    print("Carts successfully populated")   
+        
+    
+    
+                          
                       
                       
                       

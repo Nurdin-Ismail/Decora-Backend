@@ -13,15 +13,18 @@ db = SQLAlchemy()
 class User(db.Model, SerializerMixin):
     __tablename__ = 'users'
     
-    
+    serialize_rules = ('-products.user',)
     
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String, unique=True, nullable=False)
     email = db.Column(db.String, unique=True, nullable=False)
     password = db.Column(db.String, nullable=False)
     contacts = db.Column(db.String)
+    
     created_at = db.Column(db.DateTime, server_default=db.func.now())
     updated_at = db.Column(db.DateTime, onupdate=db.func.now())
+    
+    products = db.relationship('Product', secondary='carts' , backref='user')
     
 
 class Product(db.Model, SerializerMixin):
