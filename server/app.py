@@ -126,8 +126,78 @@ class Users(Resource):
             
         return make_response(jsonify(users), 200)
     
+    def post(self):
+        data = request.get_json()
+        new_user = User(
+            username = data.get('username'),
+            email = data.get('email'),
+            contacts = data.get('contacts'),
+            created_at = data.get('created_at'),
+            password = data.get('password')
+        )
+        db.session.add(new_user)
+        db.session.commit()
+        
+        new_user_dict = {
+            "id": new_user.id,
+            "username": new_user.username,
+            "email": new_user.email,
+            "contacts": new_user.contacts,
+            "created_at": new_user.created_at,
+            "password": new_user.password
+        }
+        return make_response(jsonify(new_user_dict), 200)
+        
+    
 api.add_resource(Users, '/users')
+
+class UserById(Resource):
+    
+    def get(self, id):
+        user = User.query.filter(User.id == id).first()
+        
+        if user:
+            user_dict =user.to_dict()
             
+            return make_response(jsonify(user_dict), 200)
+        else:
+            return make_response(jsonify({"error": "User not found"}), 404)
+        
+        
+    def delete(self, id):
+        user = User.query.filter(User.id == id).first()
+        
+        if user:
+            db.session.delete(user)
+            db.session.commit()
+            
+            return make_response(jsonify({"message": "User deleted successfully"}), 200)
+        else:
+            return make_response(jsonify({"error": "User not found"}), 404)
+
+api.add_resource(UserById, '/user/<int:id>')
+
+class Carts(Resource):
+    def post(self):
+        data = request.get_json()
+        
+        new_cart= Cart(
+            user_id = data.get('user_id'),
+            product_id = data.get('product_id')
+        )
+        db.session.add(new_cart)
+        db.session.commit()
+        
+        new_cart_dict = {
+            'user_id': new_cart.user_id,
+            'product_id': new_cart.product_id
+        }
+        return make_response(jsonify(new_cart_dict), 200)
+        
+api.add_resource(Carts, '/carts')
+
+
+          
 
 
 
