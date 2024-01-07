@@ -25,7 +25,7 @@ class User(db.Model, SerializerMixin):
     updated_at = db.Column(db.DateTime, onupdate=db.func.now())
     
     products = db.relationship('Product', secondary='carts' , backref='user')
-    
+    orders = db.relationship('Order',backref='user')
 
 class Product(db.Model, SerializerMixin):
     __tablename__ = 'products'
@@ -63,9 +63,25 @@ class Cart(db.Model, SerializerMixin):
     product_id = db.Column(db.Integer, db.ForeignKey('products.id'), nullable=False)
         
     
-    
-    
 
+   
+class Order(db.Model, SerializerMixin):
+    __tablename__ = 'orders'
+    
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
+    
+    products = db.relationship('Product', secondary='orderproducts' , backref='order')
+    
+class OrderProduct(db.Model, SerializerMixin):
+    
+    __tablename__ = 'orderproducts'
+    
+    id = db.Column(db.Integer, primary_key=True)
+    order_id = db.Column(db.Integer, db.ForeignKey('orders.id'), nullable=False)
+    product_id = db.Column(db.Integer, db.ForeignKey('products.id'), nullable=False)
+    
+    
     
     
     

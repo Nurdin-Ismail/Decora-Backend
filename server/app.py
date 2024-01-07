@@ -178,8 +178,10 @@ class UserById(Resource):
 api.add_resource(UserById, '/user/<int:id>')
 
 class Carts(Resource):
+    
     def post(self):
         data = request.get_json()
+        
         
         new_cart= Cart(
             user_id = data.get('user_id'),
@@ -209,4 +211,4 @@ api.add_resource(Carts, '/carts')
 
 
 if __name__ == '__main__':
-    app.run(port=5555)
+    app.run(port=5550)
