@@ -179,6 +179,21 @@ api.add_resource(UserById, '/user/<int:id>')
 
 class Carts(Resource):
     
+    def get(self):
+        carts = []
+        
+        for cart in Cart.query.all():
+            
+            cart_dict = {
+                "product_id": cart.product_id,
+                         
+                         }
+            
+            carts.append(cart_dict)
+            
+        
+        return make_response(jsonify(carts), 200)   
+    
     def post(self):
         data = request.get_json()
         
@@ -211,4 +226,4 @@ api.add_resource(Carts, '/carts')
 
 
 if __name__ == '__main__':
-    app.run(port=5550)
+    app.run(port=5555)
