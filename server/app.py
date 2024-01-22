@@ -30,10 +30,13 @@ class Products(Resource):
     def get(self):
         list = []
         for product in Product.query.all():
-            imeji_list = []
-            image = Image.query.filter(Image.product_id == product.id).first()
-             
-            imeji = '/image/' + str(image.id)
+            image_list = []
+            images = Image.query.filter(Image.product_id == product.id).all()
+            
+            for img in images:
+                imeji = '/image/' + str(img.id)
+                
+                image_list.append(imeji)
             product_dict = {
                 "id": product.id,
                 "name" : product.name,
@@ -43,7 +46,7 @@ class Products(Resource):
                 "tag" : product.tag,
                 "price" : product.price,
                 "quantity" : product.quantity,
-                "image" : imeji
+                "images" : image_list
                 
             }
             
