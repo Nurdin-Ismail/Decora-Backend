@@ -38,7 +38,7 @@ with app.app_context():
     names = []
     for dir, sub, fileso in os.walk(my_dir):
     
-        if dir != '/home/nurdin/Projects/exercise/Productimages':
+        if dir != '/home/nurdin/Projects/Decora_Backend/Productimages':
             if sub:
                 names.append(sub)
                 # print(sub)
