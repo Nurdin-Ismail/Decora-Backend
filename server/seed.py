@@ -13,7 +13,8 @@ with app.app_context():
     
     Product.query.delete()
     Image.query.delete()
-    User.query.delete()
+    User.query.delete() 
+    Cart.query.delete()
     
     text_file = open('/home/nurdin/Projects/Decora_Backend/json', 'r')
 
@@ -33,12 +34,12 @@ with app.app_context():
     
    
     #directory for all the product images
-    my_dir = '/home/nurdin/Projects/exercise/Productimages'
+    my_dir = '/home/nurdin/Projects/Decora_Backend/Product images'
     #list for names of the directories that contain the images
     names = []
     for dir, sub, fileso in os.walk(my_dir):
     
-        if dir != '/home/nurdin/Projects/Decora_Backend/Productimages':
+        if dir != '/home/nurdin/Projects/Decora_Backend/Product images':
             if sub:
                 names.append(sub)
                 # print(sub)
@@ -152,7 +153,11 @@ with app.app_context():
     #POPULATING USERS TABLE
     list_of_usernames = []
     for _ in range(100):
-        list_of_usernames.append(fake.name())
+        fake_name = fake.name()
+        if fake_name not in list_of_usernames :
+            list_of_usernames.append(fake_name)
+        
+        
         
     users = []
     for user in list_of_usernames:
@@ -176,7 +181,7 @@ with app.app_context():
     carts= []
     for i in range(50):
         user = random.randrange(1,101)
-        product = random.randrange(1,78)
+        product = random.randrange(1,7)
         cart = Cart(
             user_id = user,
             product_id = product
