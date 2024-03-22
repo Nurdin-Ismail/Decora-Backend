@@ -179,9 +179,9 @@ with app.app_context():
     #POPULATING CARTS
     
     carts= []
-    for i in range(50):
+    for i in range(100):
         user = random.randrange(1,101)
-        product = random.randrange(1,7)
+        product = random.randrange(1,53)
         cart = Cart(
             user_id = user,
             product_id = product
