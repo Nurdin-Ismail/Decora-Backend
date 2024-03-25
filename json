@@ -2,7 +2,7 @@
 {
 "SUPPLIER SKU NO": 164044816,
 "BATCH": "BATCH 1",
-"PRODUCT NAME": "Aurelia Cotton Jar ",
+"PRODUCT NAME": "Aurelia Cotton Jar",
 "CATEGORY": "Bathroom & Laundry ",
 "SUB-CATEGORY": "Bathroom Accessories",
 "PRODUCT TYPE": "cotton jar",
@@ -15,7 +15,7 @@
 {
 "SUPPLIER SKU NO": 164044817,
 "BATCH": "BATCH 1",
-"PRODUCT NAME": "Aurelia Soap dispenser",
+"PRODUCT NAME": "Aurelia Soap Dispenser",
 "CATEGORY": "Bathroom & Laundry ",
 "SUB-CATEGORY": "Bathroom Accessories ",
 "PRODUCT TYPE": "soap dispenser",
@@ -28,9 +28,9 @@
 {
 "SUPPLIER SKU NO": 164044818,
 "BATCH": "BATCH 1",
-"PRODUCT NAME": "Aurelia Soap dish ",
-"CATEGORY": "Bathroom & Laundry ",
-"SUB-CATEGORY": "Bathroom Accessories ",
+"PRODUCT NAME": "Aurelia Soap Dish",
+"CATEGORY": "Bathroom & Laundry",
+"SUB-CATEGORY": "Bathroom Accessories",
 "PRODUCT TYPE": "soap dish",
 "DESCRIPTION": "Bring more style to your contemporary bathroom with this elegant soap dish. The appealing surface design and geometric shape give an admirable outlook to this accessory. It is well-moulded from quality material and has good durability. Furthermore, this item requires a regular wipe clean for upkeep.",
 "RECEIVED QUANTITY":1,
@@ -145,7 +145,7 @@
 {
 "SUPPLIER SKU NO": 164044821,
 "BATCH": "BATCH 1",
-"PRODUCT NAME": "Aurelia Towel tray ",
+"PRODUCT NAME": "Aurelia Towel Tray",
 "CATEGORY": "Bathroom & Laundry ",
 "SUB-CATEGORY": "Bathroom Accessories ",
 "PRODUCT TYPE": "towel tray ",
@@ -184,7 +184,7 @@
 {
 "SUPPLIER SKU NO": 238836,
 "BATCH": "BATCH 1",
-"PRODUCT NAME": "Marah Tumbler ",
+"PRODUCT NAME": "Marah Tumbler",
 "CATEGORY": "Bathroom & Laundry ",
 "SUB-CATEGORY": "Bathroom Accessories ",
 "PRODUCT TYPE": "Tumbler",
@@ -210,7 +210,7 @@
 {
 "SUPPLIER SKU NO": 238954,
 "BATCH": "BATCH 1",
-"PRODUCT NAME": "Marah Toilet Brush ",
+"PRODUCT NAME": "Marah Toilet Brush",
 "CATEGORY": "Bathroom & Laundry ",
 "SUB-CATEGORY": "Bathroom Accessories ",
 "PRODUCT TYPE": "Toilet Brush",
@@ -236,7 +236,7 @@
 {
 "SUPPLIER SKU NO": 609822,
 "BATCH": "BATCH 1",
-"PRODUCT NAME": "Stretten Nickel trim Glass tubler ",
+"PRODUCT NAME": "Stretten Nickel Trim Glass Tubler",
 "CATEGORY": "Bathroom & Laundry ",
 "SUB-CATEGORY": "Bathroom Accessories ",
 "PRODUCT TYPE": "Tumbler",
@@ -436,7 +436,7 @@
 "SUB-CATEGORY": "Bathroom accesso ",
 "PRODUCT TYPE": "mirror",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 5000,
 "id": 34,
 "IMG": ""
@@ -449,7 +449,7 @@
 "SUB-CATEGORY": "Bathroom accesso ",
 "PRODUCT TYPE": "Brush Holder",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 2200,
 "id": 35,
 "IMG": ""
@@ -462,7 +462,7 @@
 "SUB-CATEGORY": "Bathroom accesso ",
 "PRODUCT TYPE": "Jar",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 2600,
 "id": 36,
 "IMG": ""
@@ -475,7 +475,7 @@
 "SUB-CATEGORY": "Bathroom accesso ",
 "PRODUCT TYPE": "Brush Holder",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 2100,
 "id": 37,
 "IMG": ""
@@ -488,7 +488,7 @@
 "SUB-CATEGORY": "Bathroom accesso ",
 "PRODUCT TYPE": "Soap Dispenser",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 2300,
 "id": 38,
 "IMG": ""
@@ -1211,7 +1211,7 @@
 {
 "SUPPLIER SKU NO": 101407,
 "BATCH": "BATCH 1",
-"PRODUCT NAME": "Lorin Cement Taper Holder ",
+"PRODUCT NAME": "Lorin Cement Taper Holder",
 "CATEGORY": "DÉCOR & ARTS",
 "SUB-CATEGORY": "Home Accessori ",
 "PRODUCT TYPE": "Candle Holder",
@@ -1224,7 +1224,7 @@
 {
 "SUPPLIER SKU NO": 207415,
 "BATCH": "BATCH 1",
-"PRODUCT NAME": "Lati Vase ",
+"PRODUCT NAME": "Lati Vase",
 "CATEGORY": "DÉCOR & ARTS",
 "SUB-CATEGORY": "Home Accessori ",
 "PRODUCT TYPE": "Vase",
@@ -1237,7 +1237,7 @@
 {
 "SUPPLIER SKU NO": 207427,
 "BATCH": "BATCH 1",
-"PRODUCT NAME": "Geo Vase ",
+"PRODUCT NAME": "Geo Vase",
 "CATEGORY": "DÉCOR & ARTS",
 "SUB-CATEGORY": "Home Accessori ",
 "PRODUCT TYPE": "Vase",
@@ -1263,7 +1263,7 @@
 {
 "SUPPLIER SKU NO": 210197,
 "BATCH": "BATCH 1",
-"PRODUCT NAME": "London Blue Small ",
+"PRODUCT NAME": "London Blue Small",
 "CATEGORY": "DÉCOR & ARTS",
 "SUB-CATEGORY": "Home Accessori ",
 "PRODUCT TYPE": "Vase",
@@ -1510,9 +1510,9 @@
 {
 "SUPPLIER SKU NO": 234203,
 "BATCH": "BATCH 1",
-"PRODUCT NAME": "Ema Ceramic Vase small",
+"PRODUCT NAME": "Ema Small White Ceramic Vase",
 "CATEGORY": "DÉCOR & ARTS",
-"SUB-CATEGORY": "Home Accessori ",
+"SUB-CATEGORY": "Home Accessories",
 "PRODUCT TYPE": "Vase",
 "DESCRIPTION": "With stippled surfaces reminiscent of the moon, Ema transforms classic vase shapes with an otherworldly finish. Countless dainty depressions texture the thick white glaze, revealing the warmly hued earthenware or glossy black glaze below. The resulting organic look complements fresh, faux and dried botanicals. Our Ema ceramic vases are Crate & Barrel exclusives.",
 "RECEIVED QUANTITY":2,
@@ -1705,7 +1705,7 @@
 {
 "SUPPLIER SKU NO": 507150,
 "BATCH": "BATCH 1",
-"PRODUCT NAME": "Black Brutalist vase ",
+"PRODUCT NAME": "Black Brutalist Vase",
 "CATEGORY": "DÉCOR & ARTS",
 "SUB-CATEGORY": "Home Accessori ",
 "PRODUCT TYPE": "Vase",
@@ -1757,7 +1757,7 @@
 {
 "SUPPLIER SKU NO": 570861,
 "BATCH": "BATCH 1",
-"PRODUCT NAME": "Lorin Cement Taper Holder Small ",
+"PRODUCT NAME": "Lorin Cement Taper Holder Small",
 "CATEGORY": "DÉCOR & ARTS",
 "SUB-CATEGORY": "Home Accessori ",
 "PRODUCT TYPE": "Candle Holder",
@@ -2061,7 +2061,7 @@
 "SUB-CATEGORY": "Wall Déco ",
 "PRODUCT TYPE": "wall Canvas ",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 29400,
 "id": 159,
 "IMG": ""
@@ -2126,7 +2126,7 @@
 "SUB-CATEGORY": "Wall Déco ",
 "PRODUCT TYPE": "Photo Frame",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 20300,
 "id": 164,
 "IMG": ""
@@ -2412,7 +2412,7 @@
 "SUB-CATEGORY": "Home Accessori ",
 "PRODUCT TYPE": "Bowl",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 12500,
 "id": 186,
 "IMG": ""
@@ -2594,7 +2594,7 @@
 "SUB-CATEGORY": "Wall Déco ",
 "PRODUCT TYPE": "Wall clock ",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 1,
+"RECEIVED QUANTITY": 1,
 "SELLING PRICE": 18800,
 "id": 200,
 "IMG": ""
@@ -2698,7 +2698,7 @@
 "SUB-CATEGORY": "Home Accessori ",
 "PRODUCT TYPE": "Vase",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 10000,
 "id": 208,
 "IMG": ""
@@ -2711,7 +2711,7 @@
 "SUB-CATEGORY": "Home Accessori ",
 "PRODUCT TYPE": "Vase",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 13300,
 "id": 209,
 "IMG": ""
@@ -2724,7 +2724,7 @@
 "SUB-CATEGORY": "Home Accessori ",
 "PRODUCT TYPE": "Vase",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 12400,
 "id": 210,
 "IMG": ""
@@ -2776,7 +2776,7 @@
 "SUB-CATEGORY": "Home Accessori ",
 "PRODUCT TYPE": "Vase",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 13400,
 "id": 214,
 "IMG": ""
@@ -2789,7 +2789,7 @@
 "SUB-CATEGORY": "Home Accessori ",
 "PRODUCT TYPE": "Decorative Objects & Sculptures",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 13100,
 "id": 215,
 "IMG": ""
@@ -2815,7 +2815,7 @@
 "SUB-CATEGORY": "Home Accessori ",
 "PRODUCT TYPE": "Bowl",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 13500,
 "id": 217,
 "IMG": ""
@@ -2828,7 +2828,7 @@
 "SUB-CATEGORY": "Home Accessori ",
 "PRODUCT TYPE": "Candle Holder ",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 15300,
 "id": 218,
 "IMG": ""
@@ -2854,7 +2854,7 @@
 "SUB-CATEGORY": "Home Accessori ",
 "PRODUCT TYPE": "Vase",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 5200,
 "id": 220,
 "IMG": ""
@@ -2867,7 +2867,7 @@
 "SUB-CATEGORY": "Home Accessori ",
 "PRODUCT TYPE": "Candle Holder ",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 13100,
 "id": 221,
 "IMG": ""
@@ -2932,7 +2932,7 @@
 "SUB-CATEGORY": "Home Accessori ",
 "PRODUCT TYPE": "Decorative Objects & Sculptures",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 6500,
 "id": 226,
 "IMG": ""
@@ -3010,7 +3010,7 @@
 "SUB-CATEGORY": "Lighting & Lamp ",
 "PRODUCT TYPE": "Table Lamp",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 44900,
 "id": 232,
 "IMG": ""
@@ -3023,7 +3023,7 @@
 "SUB-CATEGORY": "Lighting & Lamp ",
 "PRODUCT TYPE": "Table Lamp",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 27800,
 "id": 233,
 "IMG": ""
@@ -3153,7 +3153,7 @@
 "SUB-CATEGORY": "Home Accessori ",
 "PRODUCT TYPE": "Vase",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 3600,
 "id": 243,
 "IMG": ""
@@ -3166,7 +3166,7 @@
 "SUB-CATEGORY": "Home Accessori ",
 "PRODUCT TYPE": "Vase",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 2500,
 "id": 244,
 "IMG": ""
@@ -3179,7 +3179,7 @@
 "SUB-CATEGORY": "Home Accessori ",
 "PRODUCT TYPE": "Vase",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 5200,
 "id": 245,
 "IMG": ""
@@ -3335,7 +3335,7 @@
 "SUB-CATEGORY": "Wall Déco ",
 "PRODUCT TYPE": "Photo Frame",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 21500,
 "id": 257,
 "IMG": ""
@@ -3348,7 +3348,7 @@
 "SUB-CATEGORY": "Wall Déco ",
 "PRODUCT TYPE": "Photo Frame",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 21500,
 "id": 258,
 "IMG": ""
@@ -3361,7 +3361,7 @@
 "SUB-CATEGORY": "Wall Déco ",
 "PRODUCT TYPE": "Photo Frame",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 32100,
 "id": 259,
 "IMG": ""
@@ -3426,7 +3426,7 @@
 "SUB-CATEGORY": "Wall Déco ",
 "PRODUCT TYPE": "Wall Accent",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 13000,
 "id": 264,
 "IMG": ""
@@ -3439,7 +3439,7 @@
 "SUB-CATEGORY": "Wall Déco ",
 "PRODUCT TYPE": "Wall Accent",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 12700,
 "id": 265,
 "IMG": ""
@@ -3725,7 +3725,7 @@
 "SUB-CATEGORY": "Wall Deco ",
 "PRODUCT TYPE": "wall canvas",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 1,
+"RECEIVED QUANTITY": 1,
 "SELLING PRICE": 23000,
 "id": 287,
 "IMG": ""
@@ -3738,7 +3738,7 @@
 "SUB-CATEGORY": "Wall Deco ",
 "PRODUCT TYPE": "wall canvas",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 1,
+"RECEIVED QUANTITY": 1,
 "SELLING PRICE": 24200,
 "id": 288,
 "IMG": ""
@@ -3907,7 +3907,7 @@
 "SUB-CATEGORY": "Home Accessories ",
 "PRODUCT TYPE": "Decorative Objects & Sculptures",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 24200,
 "id": 301,
 "IMG": ""
@@ -3920,7 +3920,7 @@
 "SUB-CATEGORY": "Home Accessories ",
 "PRODUCT TYPE": "Decorative Objects & Sculptures",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 10400,
 "id": 302,
 "IMG": ""
@@ -3933,7 +3933,7 @@
 "SUB-CATEGORY": "Home Accessories ",
 "PRODUCT TYPE": "Decorative Objects & Sculptures",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 17200,
 "id": 303,
 "IMG": ""
@@ -3946,7 +3946,7 @@
 "SUB-CATEGORY": "Home Accessories ",
 "PRODUCT TYPE": "Decorative Objects & Sculptures",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 4,
+"RECEIVED QUANTITY": 4,
 "SELLING PRICE": 18700,
 "id": 304,
 "IMG": ""
@@ -3959,7 +3959,7 @@
 "SUB-CATEGORY": "Home Accessories ",
 "PRODUCT TYPE": "Vase",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 15000,
 "id": 305,
 "IMG": ""
@@ -3972,7 +3972,7 @@
 "SUB-CATEGORY": "Home Accessories ",
 "PRODUCT TYPE": "Candle Holder",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 8400,
 "id": 306,
 "IMG": ""
@@ -3985,7 +3985,7 @@
 "SUB-CATEGORY": "Garde ",
 "PRODUCT TYPE": "Artificial Plant ",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 5,
+"RECEIVED QUANTITY": 5,
 "SELLING PRICE": 2200,
 "id": 307,
 "IMG": ""
@@ -3998,7 +3998,7 @@
 "SUB-CATEGORY": "Home Accessories ",
 "PRODUCT TYPE": "Vase",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 11900,
 "id": 308,
 "IMG": ""
@@ -4011,7 +4011,7 @@
 "SUB-CATEGORY": "Home Accessories ",
 "PRODUCT TYPE": "Vase",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 11300,
 "id": 309,
 "IMG": ""
@@ -4024,7 +4024,7 @@
 "SUB-CATEGORY": "Home Accessories ",
 "PRODUCT TYPE": "Vase",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 12500,
 "id": 310,
 "IMG": ""
@@ -4037,7 +4037,7 @@
 "SUB-CATEGORY": "Home Accessories ",
 "PRODUCT TYPE": "Candle Holder",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 4,
+"RECEIVED QUANTITY": 4,
 "SELLING PRICE": 6300,
 "id": 311,
 "IMG": ""
@@ -4045,12 +4045,12 @@
 {
 "SUPPLIER SKU NO": 570746,
 "BATCH": "BATCH 2",
-"PRODUCT NAME": "Lorin Large Taper ",
+"PRODUCT NAME": "Lorin Large Taper Holder",
 "CATEGORY": "DÉCOR & ARTS",
 "SUB-CATEGORY": "Home Accessories ",
 "PRODUCT TYPE": "Candle Holder",
-"DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"DESCRIPTION": "Cement goes light and luxe in our sculptural Lorin candle holder. The cool white holder curves a tubular silhouette that rises from an oval base to elevate a pair of tapers. Subtle texturing gives the double candlestick the look and feel of an artisan creation. With its industrial beauty, the sculpted taper holder makes a statement displayed on its own or grouped with the other pieces in our exclusive Lorin collection for an interesting interplay of shapes.",
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 6800,
 "id": 312,
 "IMG": ""
@@ -4058,12 +4058,12 @@
 {
 "SUPPLIER SKU NO": 570851,
 "BATCH": "BATCH 2",
-"PRODUCT NAME": "Lorin Medium Taper ",
+"PRODUCT NAME": "Lorin Medium Taper Holder",
 "CATEGORY": "DÉCOR & ARTS",
 "SUB-CATEGORY": "Home Accessories ",
 "PRODUCT TYPE": "Candle Holder",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 6800,
 "id": 313,
 "IMG": ""
@@ -4076,7 +4076,7 @@
 "SUB-CATEGORY": "Home Accessories ",
 "PRODUCT TYPE": "Candle Holder",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 8200,
 "id": 314,
 "IMG": ""
@@ -4089,7 +4089,7 @@
 "SUB-CATEGORY": "Home Accessories ",
 "PRODUCT TYPE": "Candle Holder",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 10400,
 "id": 315,
 "IMG": ""
@@ -4102,7 +4102,7 @@
 "SUB-CATEGORY": "Home Accessories ",
 "PRODUCT TYPE": "Candle Holder",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 10900,
 "id": 316,
 "IMG": ""
@@ -4115,7 +4115,7 @@
 "SUB-CATEGORY": "Home Accessories ",
 "PRODUCT TYPE": "Candle Holder",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 6800,
 "id": 317,
 "IMG": ""
@@ -4128,7 +4128,7 @@
 "SUB-CATEGORY": "Home Accessories ",
 "PRODUCT TYPE": "Tray",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 8100,
 "id": 318,
 "IMG": ""
@@ -4141,7 +4141,7 @@
 "SUB-CATEGORY": "Wall Deco ",
 "PRODUCT TYPE": "Wall Accent",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 10600,
 "id": 319,
 "IMG": ""
@@ -4154,7 +4154,7 @@
 "SUB-CATEGORY": "Home Accessories ",
 "PRODUCT TYPE": "Candle Holder",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 4200,
 "id": 320,
 "IMG": ""
@@ -4167,7 +4167,7 @@
 "SUB-CATEGORY": "Garde ",
 "PRODUCT TYPE": "Pot Planter",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 7000,
 "id": 321,
 "IMG": ""
@@ -4180,7 +4180,7 @@
 "SUB-CATEGORY": "Home Accessories ",
 "PRODUCT TYPE": "Vase",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 4100,
 "id": 322,
 "IMG": ""
@@ -4193,7 +4193,7 @@
 "SUB-CATEGORY": "Home Accessories ",
 "PRODUCT TYPE": "Vase",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 14900,
 "id": 323,
 "IMG": ""
@@ -4206,7 +4206,7 @@
 "SUB-CATEGORY": "Home Accessories ",
 "PRODUCT TYPE": "Vase",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 5300,
 "id": 324,
 "IMG": ""
@@ -4219,7 +4219,7 @@
 "SUB-CATEGORY": "Home Accessories ",
 "PRODUCT TYPE": "Vase",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 2900,
 "id": 325,
 "IMG": ""
@@ -4232,7 +4232,7 @@
 "SUB-CATEGORY": "Home Accessories ",
 "PRODUCT TYPE": "Vase",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 800,
 "id": 326,
 "IMG": ""
@@ -4245,7 +4245,7 @@
 "SUB-CATEGORY": "Home Accessories ",
 "PRODUCT TYPE": "Bowl",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 11400,
 "id": 327,
 "IMG": ""
@@ -4258,7 +4258,7 @@
 "SUB-CATEGORY": "Home Accessories ",
 "PRODUCT TYPE": "Candle Holder ",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 13300,
 "id": 328,
 "IMG": ""
@@ -4271,7 +4271,7 @@
 "SUB-CATEGORY": "Home Accessories ",
 "PRODUCT TYPE": "Candle Holder ",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 11600,
 "id": 329,
 "IMG": ""
@@ -4284,7 +4284,7 @@
 "SUB-CATEGORY": "Lighting & Lamps ",
 "PRODUCT TYPE": "Table Lamp",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 4,
+"RECEIVED QUANTITY": 4,
 "SELLING PRICE": 22400,
 "id": 330,
 "IMG": ""
@@ -4297,7 +4297,7 @@
 "SUB-CATEGORY": "Lighting & Lamps ",
 "PRODUCT TYPE": "Table Lamp",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 23500,
 "id": 331,
 "IMG": ""
@@ -4310,7 +4310,7 @@
 "SUB-CATEGORY": "Wall Deco ",
 "PRODUCT TYPE": "Decor",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 20800,
 "id": 332,
 "IMG": ""
@@ -4323,7 +4323,7 @@
 "SUB-CATEGORY": "Wall Deco ",
 "PRODUCT TYPE": "Decor",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 19200,
 "id": 333,
 "IMG": ""
@@ -4336,7 +4336,7 @@
 "SUB-CATEGORY": "Lighting & Lamps ",
 "PRODUCT TYPE": "Table Lamp",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 24200,
 "id": 334,
 "IMG": ""
@@ -4349,7 +4349,7 @@
 "SUB-CATEGORY": "Home Accessories ",
 "PRODUCT TYPE": "Vase",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 3800,
 "id": 335,
 "IMG": ""
@@ -4362,7 +4362,7 @@
 "SUB-CATEGORY": "Home Accessories ",
 "PRODUCT TYPE": "Vase",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 1900,
 "id": 336,
 "IMG": ""
@@ -4375,7 +4375,7 @@
 "SUB-CATEGORY": "Home Accessories ",
 "PRODUCT TYPE": "Vase",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 1900,
 "id": 337,
 "IMG": ""
@@ -4388,7 +4388,7 @@
 "SUB-CATEGORY": "Garde ",
 "PRODUCT TYPE": "Pot Planter",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 3200,
 "id": 338,
 "IMG": ""
@@ -4401,7 +4401,7 @@
 "SUB-CATEGORY": "Home Accessories ",
 "PRODUCT TYPE": "Candle Holder",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 6200,
 "id": 339,
 "IMG": ""
@@ -4414,7 +4414,7 @@
 "SUB-CATEGORY": "Home Accessories ",
 "PRODUCT TYPE": "Pen Holder",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 4300,
 "id": 340,
 "IMG": ""
@@ -4427,7 +4427,7 @@
 "SUB-CATEGORY": "Lighting & Lamps ",
 "PRODUCT TYPE": "Lantern",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 16300,
 "id": 341,
 "IMG": ""
@@ -4440,7 +4440,7 @@
 "SUB-CATEGORY": "Lighting & Lamps ",
 "PRODUCT TYPE": "Lantern",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 15300,
 "id": 342,
 "IMG": ""
@@ -4453,7 +4453,7 @@
 "SUB-CATEGORY": "Lighting & Lamps ",
 "PRODUCT TYPE": "Lantern",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 12400,
 "id": 343,
 "IMG": ""
@@ -4466,7 +4466,7 @@
 "SUB-CATEGORY": "Lighting & Lamps ",
 "PRODUCT TYPE": "Lantern",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 10300,
 "id": 344,
 "IMG": ""
@@ -4479,7 +4479,7 @@
 "SUB-CATEGORY": "Home Accessorie ",
 "PRODUCT TYPE": "Candle Holder",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 16200,
 "id": 345,
 "IMG": ""
@@ -5064,7 +5064,7 @@
 "SUB-CATEGORY": "Table line ",
 "PRODUCT TYPE": "Napkin Ring",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 20,
+"RECEIVED QUANTITY": 20,
 "SELLING PRICE": 1000,
 "id": 390,
 "IMG": ""
@@ -5623,7 +5623,7 @@
 "SUB-CATEGORY": "Bath & Stora ",
 "PRODUCT TYPE": "soap dish",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 2800,
 "id": 433,
 "IMG": ""
@@ -6858,7 +6858,7 @@
 "SUB-CATEGORY": "Drinkwa ",
 "PRODUCT TYPE": "optic dessert glass",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 2,
+"RECEIVED QUANTITY": 2,
 "SELLING PRICE": 7200,
 "id": 528,
 "IMG": ""
@@ -7261,7 +7261,7 @@
 "SUB-CATEGORY": "ServeWare  & Dinnerwa ",
 "PRODUCT TYPE": "Tray",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 4,
+"RECEIVED QUANTITY": 4,
 "SELLING PRICE": 12700,
 "id": 559,
 "IMG": ""
@@ -7274,7 +7274,7 @@
 "SUB-CATEGORY": "ServeWare  & Dinnerwa ",
 "PRODUCT TYPE": "Platter",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 5,
+"RECEIVED QUANTITY": 5,
 "SELLING PRICE": 1500,
 "id": 560,
 "IMG": ""
@@ -7287,7 +7287,7 @@
 "SUB-CATEGORY": "ServeWare  & Dinnerwa ",
 "PRODUCT TYPE": "Platter",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 10,
+"RECEIVED QUANTITY": 10,
 "SELLING PRICE": 7000,
 "id": 561,
 "IMG": ""
@@ -7300,7 +7300,7 @@
 "SUB-CATEGORY": "ServeWare  & Dinnerwa ",
 "PRODUCT TYPE": "Bowl",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 4600,
 "id": 562,
 "IMG": ""
@@ -7313,7 +7313,7 @@
 "SUB-CATEGORY": "ServeWare  & Dinnerwa ",
 "PRODUCT TYPE": "Serving bowl",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 16400,
 "id": 563,
 "IMG": ""
@@ -7326,7 +7326,7 @@
 "SUB-CATEGORY": "Drinkwa ",
 "PRODUCT TYPE": "Jug",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 1,
+"RECEIVED QUANTITY": 1,
 "SELLING PRICE": 22800,
 "id": 564,
 "IMG": ""
@@ -7339,7 +7339,7 @@
 "SUB-CATEGORY": "ServeWare  & Dinnerwa ",
 "PRODUCT TYPE": "Serving set",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 11400,
 "id": 565,
 "IMG": ""
@@ -7352,7 +7352,7 @@
 "SUB-CATEGORY": "ServeWare  & Dinnerwa ",
 "PRODUCT TYPE": "Platter",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 5,
+"RECEIVED QUANTITY": 5,
 "SELLING PRICE": 7700,
 "id": 566,
 "IMG": ""
@@ -7365,7 +7365,7 @@
 "SUB-CATEGORY": "ServeWare  & Dinnerwa ",
 "PRODUCT TYPE": "Server",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 4,
+"RECEIVED QUANTITY": 4,
 "SELLING PRICE": 14700,
 "id": 567,
 "IMG": ""
@@ -7378,7 +7378,7 @@
 "SUB-CATEGORY": "ServeWare  & Dinnerwa ",
 "PRODUCT TYPE": "Bowl",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 8900,
 "id": 568,
 "IMG": ""
@@ -7391,7 +7391,7 @@
 "SUB-CATEGORY": "ServeWare  & Dinnerwa ",
 "PRODUCT TYPE": "Chip n dip",
 "DESCRIPTION": "#N/A",
-"RECEIVED QUNITY": 3,
+"RECEIVED QUANTITY": 3,
 "SELLING PRICE": 6800,
 "id": 569,
 "IMG": ""

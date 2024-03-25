@@ -16,7 +16,7 @@ with app.app_context():
     User.query.delete() 
     Cart.query.delete()
     
-    text_file = open('/home/nurdin/Projects/Decora_Backend/json', 'r')
+    text_file = open('/home/nurdin/Projects/Decora-Backend/json', 'r')
 
     text_file1 = text_file.read()
     # print(text_file1)
@@ -34,7 +34,7 @@ with app.app_context():
     
    
     #directory for all the product images
-    my_dir = '/home/nurdin/Projects/Decora_Backend/Product images'
+    my_dir = '/home/nurdin/Projects/Decora-Backend/Product images'
     #list for names of the directories that contain the images
     names = []
     for dir, sub, fileso in os.walk(my_dir):
@@ -48,6 +48,8 @@ with app.app_context():
 
     resultList = []
 
+    
+
 # Traversing in till the length of the input list of lists
 # 
     for m in range(len(names)):
@@ -57,7 +59,8 @@ with app.app_context():
 
       # Add each element to the result list
             resultList.append(names[m][n])
-            
+    
+    print(len(resultList))   
             
     common_names = [name for name in resultList if name in target_names]
     
@@ -68,6 +71,7 @@ with app.app_context():
     for i in data:
         if i.get("RECEIVED QUANTITY") and i.get('DESCRIPTION'):
             filtered.append(i)
+    # print(filtered)
             
     name_counts = {}
     for item in data:
@@ -81,7 +85,6 @@ with app.app_context():
     for item in range(len(filtered)):
         if filtered[item]['PRODUCT NAME'] in common_names and name_counts[filtered[item]['PRODUCT NAME']] == 1:
             filtered_data.append(filtered[item])
-    
     
     # item = filtered[230]['PRODUCT NAME']
     # if item in common_names:
