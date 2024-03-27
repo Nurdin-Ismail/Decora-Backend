@@ -25,12 +25,24 @@ with app.app_context():
     
     target_names = []
     
+    
     for i in data:
-        target_names.append(i['PRODUCT NAME'])
-        
+        if i['PRODUCT NAME'][-1] != ' ':
+            
+            target_names.append(i['PRODUCT NAME'].title())
+        else:
+            target_names.append(i['PRODUCT NAME'][:-2].title())
     
         
- 
+    # print(target_names)
+    # print(len(target_names))
+    
+    
+    testo = 'Trying To Make A Test'
+    
+    kanu = testo.title()
+    
+    print(testo, kanu)
     
    
     #directory for all the product images
@@ -98,7 +110,7 @@ with app.app_context():
     for item in filtered_data:
         if item['PRODUCT NAME'] in common_names:
             filtered_common_names.append(item["PRODUCT NAME"])
-    print('filtered names' ,len(filtered_common_names))
+    print('filtered names' ,filtered_common_names)
     # print(filtered_data)
     
     print(len(filtered_data))
