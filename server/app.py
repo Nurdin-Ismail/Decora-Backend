@@ -46,7 +46,9 @@ class Products(Resource):
                 "tag" : product.tag,
                 "price" : product.price,
                 "quantity" : product.quantity,
-                "images" : image_list
+                "images" : image_list,
+                "created_at" : product.created_at,
+                "updated_at" : product.updated_at
                 
             }
             
