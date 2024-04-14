@@ -199,7 +199,8 @@ with app.app_context():
         product = random.randrange(1,53)
         cart = Cart(
             user_id = user,
-            product_id = product
+            product_id = product,
+            quantity = 1
         )
         
         carts.append(cart)

@@ -114,6 +114,7 @@ class Users(Resource):
             for item in list:
                 res = requests.get(f'http://127.0.0.1:5555/product/{item.product_id}')
                 response = json.loads(res.text)
+                response['quantity'] = [response['quantity'] ,item.quantity ]
                 cart.append(response)
                 
             user_dict= {
@@ -160,9 +161,30 @@ class UserById(Resource):
     
     def get(self, id):
         user = User.query.filter(User.id == id).first()
+
         
         if user:
-            user_dict =user.to_dict()
+            cart = []
+            list = Cart.query.filter(user.id == Cart.user_id).all()
+            for item in list:
+                res = requests.get(f'http://127.0.0.1:5555/product/{item.product_id}')
+                response = json.loads(res.text)
+                
+                response['quantity'] = [response['quantity'] ,item.quantity ]
+                print(response['quantity'])
+                cart.append(response)
+
+            user_dict= {
+                "id" : user.id,
+                "name" : user.username,
+                "email" : user.email,
+                "passord": user.password,
+                "created_at" : user.created_at,
+                "updated_at" : user.updated_at,
+                "cart" : cart
+                
+            }
+            
             
             return make_response(jsonify(user_dict), 200)
         else:
@@ -215,8 +237,55 @@ class Carts(Resource):
             'product_id': new_cart.product_id
         }
         return make_response(jsonify(new_cart_dict), 200)
+    
+    
         
 api.add_resource(Carts, '/carts')
+
+class CartById(Resource):
+    
+    def get(self, id):
+        cart = Cart.query.filter(Cart.id == id).first()
+
+        
+        if cart:
+            # products = []
+            # list = Cart.query.filter(user.id == Cart.user_id).all()
+            # for item in list:
+            #     res = requests.get(f'http://127.0.0.1:5555/product/{item.product_id}')
+            #     response = json.loads(res.text)
+            #     cart.append(response)
+
+            cart_dict= {
+                "id" : cart.id,
+                "user_id" : cart.user_id,
+                "product_id" : cart.product_id,
+                "quantity" : cart.quantity
+                
+                
+            }
+            
+            
+            return make_response(jsonify(cart_dict), 200)
+        else:
+            return make_response(jsonify({"error": "Cart not found"}), 404)
+        
+        
+    # def delete(self, id):
+    #     user = User.query.filter(User.id == id).first()
+        
+    #     if user:
+    #         db.session.delete(user)
+    #         db.session.commit()
+            
+    #         return make_response(jsonify({"message": "User deleted successfully"}), 200)
+    #     else:
+    #         return make_response(jsonify({"error": "User not found"}), 404)
+
+api.add_resource(CartById, '/cart/<int:id>')
+
+
+
 
 
           
