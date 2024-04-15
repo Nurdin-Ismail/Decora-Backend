@@ -172,6 +172,7 @@ class UserById(Resource):
                 
                 response['quantity'] = [response['quantity'] ,item.quantity ]
                 print(response['quantity'])
+                response['cart_id'] = item.id
                 cart.append(response)
 
             user_dict= {
@@ -270,17 +271,85 @@ class CartById(Resource):
         else:
             return make_response(jsonify({"error": "Cart not found"}), 404)
         
+    def patch(self,id):
+        # record = Cart.query.filter(Cart.id == id).first()
+        # for attr in request.form:
+        #     setattr(record, attr, request.form[attr])
+
+        # db.session.add(record)
+        # db.session.commit()
+
+        # response_dict = {
+        #     "id": record.id,
+        #     "product_id": record.product_id,
+        #     "quantity": record.quantity,
+        #     "user_id": record.user_id
+        # }
+
+        # response = make_response(
+        #     response_dict,
+        #     200
+        # )
+
+        # return response  
+
+        record = Cart.query.filter(Cart.id == id).first()
+        if not record:
+            return make_response({"error": "Record not found"}, 404)
+
+        try:
+            if request.content_type == 'application/json':
+
+                
+                data = request.json  # Get JSON data from the request body
+                if data:
+                    for key, value in data.items():
+                        setattr(record, key, value)
+                    db.session.add(record)
+                    db.session.commit()
+                else:
+                    return make_response({"error": "No data provided in JSON format"}, 400)
+
+            else:
+                for attr in request.form:
+                    setattr(record, attr, request.form[attr])
+                db.session.add(record)
+                db.session.commit()
+
+           
+
+            response_dict = {
+                "id": record.id,
+                "product_id": record.product_id,
+                "quantity": record.quantity,
+                "user_id": record.user_id
+            }
+
+            response = make_response(
+                jsonify(response_dict),
+                200
+            )
+
+            return response
+
+        except Exception as e:
+            return make_response({"error": str(e)}, 400)
         
-    # def delete(self, id):
-    #     user = User.query.filter(User.id == id).first()
-        
-    #     if user:
-    #         db.session.delete(user)
-    #         db.session.commit()
-            
-    #         return make_response(jsonify({"message": "User deleted successfully"}), 200)
-    #     else:
-    #         return make_response(jsonify({"error": "User not found"}), 404)
+    def delete(self, id):
+
+        record = Cart.query.filter(Cart.id == id).first()
+
+        db.session.delete(record)
+        db.session.commit()
+
+        response_dict = {"message": "record successfully deleted"}
+
+        response = make_response(
+            response_dict,
+            200
+        )
+
+        return response
 
 api.add_resource(CartById, '/cart/<int:id>')
 
