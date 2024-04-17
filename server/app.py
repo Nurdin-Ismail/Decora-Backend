@@ -228,7 +228,8 @@ class Carts(Resource):
         
         new_cart= Cart(
             user_id = data.get('user_id'),
-            product_id = data.get('product_id')
+            product_id = data.get('product_id'),
+            quantity = data.get('quantity')
         )
         db.session.add(new_cart)
         db.session.commit()
