@@ -175,6 +175,7 @@ class UserById(Resource):
                 response['cart_id'] = item.id
                 cart.append(response)
 
+
             user_dict= {
                 "id" : user.id,
                 "name" : user.username,
@@ -183,7 +184,7 @@ class UserById(Resource):
                 "created_at" : user.created_at,
                 "updated_at" : user.updated_at,
                 'contacts' : user.contacts,
-                'address' : user.address,
+                'address' : json.loads(user.address),
                 "cart" : cart
                 
             }
