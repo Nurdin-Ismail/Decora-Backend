@@ -119,7 +119,7 @@ class Users(Resource):
                 
             user_dict= {
                 "id" : user.id,
-                "name" : user.username,
+                "username" : user.username,
                 "email" : user.email,
                 "passord": user.password,
                 "created_at" : user.created_at,
@@ -137,7 +137,7 @@ class Users(Resource):
         new_user = User(
             username = data.get('username'),
             email = data.get('email'),
-            contacts = data.get('contacts'),
+            
             created_at = data.get('created_at'),
             password = data.get('password')
         )
@@ -148,7 +148,7 @@ class Users(Resource):
             "id": new_user.id,
             "username": new_user.username,
             "email": new_user.email,
-            "contacts": new_user.contacts,
+            
             "created_at": new_user.created_at,
             "password": new_user.password
         }
@@ -178,7 +178,7 @@ class UserById(Resource):
 
             user_dict= {
                 "id" : user.id,
-                "name" : user.username,
+                "username" : user.username,
                 "email" : user.email,
                 "password": user.password,
                 "created_at" : user.created_at,
@@ -214,7 +214,7 @@ class UserById(Resource):
                         "id": record.id,
                         "email": record.email,
                         "password": record.password,
-                        "name": record.username
+                        "username": record.username
                     }
 
                     response = make_response(
@@ -238,7 +238,7 @@ class UserById(Resource):
                         "id": record.id,
                         "email": record.email,
                         "password": record.password,
-                        "name": record.username
+                        "username": record.username
                     }
 
                 response = make_response(
