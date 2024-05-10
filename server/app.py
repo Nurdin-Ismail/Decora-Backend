@@ -116,6 +116,14 @@ class Users(Resource):
                 response = json.loads(res.text)
                 response['quantity'] = [response['quantity'] ,item.quantity ]
                 cart.append(response)
+            
+            address = 'No address'
+            if user.address != None:
+                address = json.loads(user.address)
+            else:
+                address = 'No Address'
+
+                
                 
             user_dict= {
                 "id" : user.id,
@@ -124,7 +132,10 @@ class Users(Resource):
                 "passord": user.password,
                 "created_at" : user.created_at,
                 "updated_at" : user.updated_at,
-                "cart" : cart
+                "cart" : cart,
+                'address' : address
+                
+
                 
             }
             
