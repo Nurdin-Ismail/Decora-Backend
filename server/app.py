@@ -409,6 +409,28 @@ class CartById(Resource):
 
 api.add_resource(CartById, '/cart/<int:id>')
 
+class Orders(Resource):
+    def post(self):
+        data = request.get_json()
+        
+        
+        new_order= Order(
+            user_id = data.get('user_id'),
+            overview = data.get('overview')
+        )
+        db.session.add(new_order)
+        db.session.commit()
+        
+        new_order_dict = {
+            'user_id': new_order.user_id,
+            'Overview': new_order.overview
+        }
+        return make_response(jsonify(new_order_dict), 200)
+
+api.add_resource(Orders, '/orders')
+
+
+
 
 
 
