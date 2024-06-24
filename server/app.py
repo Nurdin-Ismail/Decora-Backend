@@ -7,8 +7,14 @@ from flask_cors import CORS
 from sqlalchemy import desc, asc
 import requests
 import json
+from datetime import datetime
+from dotenv import load_dotenv
+import os
+import base64
 
 
+
+load_dotenv()
 
 from models import *
 
@@ -20,6 +26,20 @@ migrate = Migrate(app, db)
 db.init_app(app)
 api = Api(app)
 CORS(app)
+
+MPESA_CONSUMER_KEY='gLUMAaJWogwRnMRHFOGLapbxBzMqSvGeX8I2zXyj1Oz8aFzG'
+MPESA_CONSUMER_SECRET='64bEDtL7A3YLGIzeIYw5uJAJSiCdE9Gf9OtnBE9I3HeclvvZWoikR7PAkG7SGDE8'
+MPESA_SHORTCODE=174379
+MPESA_PASSKEY='bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919'
+
+def get_access_token():
+    url = 'https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials'
+    auth = (MPESA_CONSUMER_KEY, MPESA_CONSUMER_SECRET)
+    response = requests.get(url, auth=auth)
+    if response.status_code == 200:
+        return response.json()['access_token']
+    else:
+        return None
 
 @app.route('/')
 def home():
@@ -429,6 +449,49 @@ class Orders(Resource):
 
 api.add_resource(Orders, '/orders')
 
+
+class MpesaPayment(Resource):
+    def post(self):
+        data = request.get_json()
+        phone = data['number']
+        amount = data['amount']
+        access_token = get_access_token()
+        print(access_token)
+
+        if not access_token:
+            return {'error': 'Could not get access token'}, 500
+
+        url = 'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest'
+        headers = {
+            'Authorization': f'Bearer {access_token}'
+        }
+        timestamp = datetime.now().strftime('%Y%m%d%H%M%S')
+        password = base64.b64encode(f'{MPESA_SHORTCODE}{MPESA_PASSKEY}{timestamp}'.encode('utf-8')).decode('utf-8')
+
+        payload = {
+            'BusinessShortCode': 174379,
+            'Password': password,
+            'Timestamp': timestamp,
+            'TransactionType': 'CustomerPayBillOnline',
+            'Amount': 1,
+            'PartyA': phone,
+            'PartyB': 174379,
+            'PhoneNumber': phone,
+            'CallBackURL': 'https://mydomain.com/path',
+            'AccountReference': 'Test123',
+            'TransactionDesc': 'Payment for goods'
+        }
+
+        response = requests.post(url, json=payload, headers=headers)
+        print(f'Status Code: {response.status_code}')
+        print(f'Response Content: {response.content.decode("utf-8")}')
+        if response.status_code == 200:
+            return response.json()
+        else:
+
+             return  response.status_code
+
+api.add_resource(MpesaPayment, '/mpesa')
 
 
 
