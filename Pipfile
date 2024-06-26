@@ -19,6 +19,10 @@ honcho = "*"
 gunicorn = "*"
 flask-bcrypt = "*"
 flask-cors = "*"
+dotenv == *
+datetime == *
+base64 == *
+
 
 [requires]
 python_full_version = "3.10.12"
