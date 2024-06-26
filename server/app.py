@@ -130,7 +130,7 @@ class Users(Resource):
             cart = []
             list = Cart.query.filter(user.id == Cart.user_id).all()
             for item in list:
-                res = requests.get(f'http://127.0.0.1:5555/product/{item.product_id}')
+                res = requests.get(f'http://127.0.0.1:5000/product/{item.product_id}')
                 response = json.loads(res.text)
                 response['quantity'] = [response['quantity'] ,item.quantity ]
                 cart.append(response)
@@ -196,7 +196,7 @@ class UserById(Resource):
             cart = []
             list = Cart.query.filter(user.id == Cart.user_id).all()
             for item in list:
-                res = requests.get(f'http://127.0.0.1:5555/product/{item.product_id}')
+                res = requests.get(f'http://127.0.0.1:5000/product/{item.product_id}')
                 response = json.loads(res.text)
                 
                 response['quantity'] = [response['quantity'] ,item.quantity ]
