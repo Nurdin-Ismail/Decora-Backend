@@ -60,3 +60,7 @@ zipp==3.15.0
 Flask-CORS==4.0.0
 Flask-Bcrypt == 1.0.1
 requests == 2.32.3
+dotenv == *
+datetime == *
+base64 == *
+json == *
