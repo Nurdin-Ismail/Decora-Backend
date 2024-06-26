@@ -19,9 +19,9 @@ honcho = "*"
 gunicorn = "*"
 flask-bcrypt = "*"
 flask-cors = "*"
-dotenv == *
-datetime == *
-base64 == *
+load_dotenv == "*"
+datetime == "*"
+base64 == "*"
 
 
 [requires]
