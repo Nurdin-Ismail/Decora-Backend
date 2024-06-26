@@ -204,6 +204,13 @@ class UserById(Resource):
                 response['cart_id'] = item.id
                 cart.append(response)
 
+            address = 'No address'
+            if user.address != None:
+                address = json.loads(user.address)
+            else:
+                address = 'No Address'
+
+
 
             user_dict= {
                 "id" : user.id,
@@ -213,7 +220,7 @@ class UserById(Resource):
                 "created_at" : user.created_at,
                 "updated_at" : user.updated_at,
                 'contacts' : user.contacts,
-                'address' : json.loads(user.address),
+                'address' : address,
                 "cart" : cart
                 
             }
