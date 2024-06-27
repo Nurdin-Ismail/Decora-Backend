@@ -143,19 +143,29 @@ class Users(Resource):
 
                 
                 
-            user_dict= {
-                "id" : user.id,
-                "username" : user.username,
-                "email" : user.email,
-                "passord": user.password,
-                "created_at" : user.created_at,
-                "updated_at" : user.updated_at,
-                "cart" : cart,
-                'address' : address
-                
+            user_dict= user.to_dict()
 
-                
-            }
+            if len(user_dict['cart']) > 0:
+                # print(user_dict['cart'])
+
+                for i in user_dict['cart']:
+                    imageso = []
+
+                    for k in i['product']['images']:
+                        imeji = '/image/' + str(k['id'])
+
+                        imageso.append(imeji)
+
+                    i['product']['images'] = imageso
+
+                    
+                    
+
+                     
+                         
+
+
+
             
             users.append(user_dict)
             

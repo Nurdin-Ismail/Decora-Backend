@@ -13,7 +13,7 @@ db = SQLAlchemy()
 class User(db.Model, SerializerMixin):
     __tablename__ = 'users'
     
-    serialize_rules = ('-products.user',)
+    serialize_rules = ('-cart.user', '-cart.id', '-cart.user_id', '-cart.product_id',)
     
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String, unique=True, nullable=False)
@@ -24,14 +24,16 @@ class User(db.Model, SerializerMixin):
     
     created_at = db.Column(db.DateTime, server_default=db.func.now())
     updated_at = db.Column(db.DateTime, onupdate=db.func.now())
+
+    cart = db.relationship('Cart', back_populates = 'user')
     
-    products = db.relationship('Product', secondary='carts' , backref='user')
-    orders = db.relationship('Order',backref='user')
+    # products = db.relationship('Product', secondary='carts' , backref='user')
+    # orders = db.relationship('Order',backref='user')
 
 class Product(db.Model, SerializerMixin):
     __tablename__ = 'products'
     
-    serialize_rules = ( '-images.product', '-images.img')
+    serialize_rules = ( '-images.product', '-images.img', '-cart.product')
     
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String)
@@ -46,6 +48,9 @@ class Product(db.Model, SerializerMixin):
 
     
     images = db.relationship('Image', backref='product')
+    cart = db.relationship('Cart', back_populates = 'product')
+
+    # users = db.relationship('User', secondary='carts', backref='product')
     
     # images = re
     
@@ -61,11 +66,19 @@ class Image(db.Model, SerializerMixin):
 
 class Cart(db.Model, SerializerMixin):
     __tablename__ = 'carts'
+
+    serialize_rules = ( '-user.cart', '-product.cart', '-user.cart.id')
+
     
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
     product_id = db.Column(db.Integer, db.ForeignKey('products.id'), nullable=False)
     quantity = db.Column(db.Integer, nullable=False)
+    
+    
+    user = db.relationship('User', back_populates = 'cart')
+    product = db.relationship('Product', back_populates = 'cart')
+
 
     def __repr__(self):
         return f'(id={self.id}, product={self.product_id} user={self.user_id} quantity={self.quantity})'    
@@ -74,6 +87,7 @@ class Cart(db.Model, SerializerMixin):
    
 class Order(db.Model, SerializerMixin):
     __tablename__ = 'orders'
+
     
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
