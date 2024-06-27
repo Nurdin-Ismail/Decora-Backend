@@ -127,13 +127,7 @@ class Users(Resource):
     def get(self):
         users = []
         for user in User.query.all():
-            cart = []
-            list = Cart.query.filter(user.id == Cart.user_id).all()
-            for item in list:
-                res = requests.get(f'http://127.0.0.1:5000/product/{item.product_id}')
-                response = json.loads(res.text)
-                response['quantity'] = [response['quantity'] ,item.quantity ]
-                cart.append(response)
+            
             
             address = 'No address'
             if user.address != None:
