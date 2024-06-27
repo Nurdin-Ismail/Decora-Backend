@@ -197,16 +197,7 @@ class UserById(Resource):
 
         
         if user:
-            cart = []
-            list = Cart.query.filter(user.id == Cart.user_id).all()
-            for item in list:
-                res = requests.get(f'http://127.0.0.1:5000/product/{item.product_id}')
-                response = json.loads(res.text)
-                
-                response['quantity'] = [response['quantity'] ,item.quantity ]
-                print(response['quantity'])
-                response['cart_id'] = item.id
-                cart.append(response)
+            
 
             address = 'No address'
             if user.address != None:
@@ -216,18 +207,20 @@ class UserById(Resource):
 
 
 
-            user_dict= {
-                "id" : user.id,
-                "username" : user.username,
-                "email" : user.email,
-                "password": user.password,
-                "created_at" : user.created_at,
-                "updated_at" : user.updated_at,
-                'contacts' : user.contacts,
-                'address' : address,
-                "cart" : cart
-                
-            }
+            user_dict= user.to_dict()
+
+            if len(user_dict['cart']) > 0:
+                # print(user_dict['cart'])
+
+                for i in user_dict['cart']:
+                    imageso = []
+
+                    for k in i['product']['images']:
+                        imeji = '/image/' + str(k['id'])
+
+                        imageso.append(imeji)
+
+                    i['product']['images'] = imageso
             
             
             return make_response(jsonify(user_dict), 200)
