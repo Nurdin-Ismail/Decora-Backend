@@ -67,7 +67,7 @@ class Image(db.Model, SerializerMixin):
 class Cart(db.Model, SerializerMixin):
     __tablename__ = 'carts'
 
-    serialize_rules = ( '-user.cart', '-product.cart', '-user.cart.id')
+    serialize_rules = ( '-user.cart', '-product.cart', )
 
     
     id = db.Column(db.Integer, primary_key=True)
