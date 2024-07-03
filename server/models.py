@@ -13,7 +13,7 @@ db = SQLAlchemy()
 class User(db.Model, SerializerMixin):
     __tablename__ = 'users'
     
-    serialize_rules = ('-cart.user', '-cart.id', '-cart.user_id', '-cart.product_id',)
+    serialize_rules = ('-cart.user', '-cart.user_id', '-cart.product_id',)
     
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String, unique=True, nullable=False)
